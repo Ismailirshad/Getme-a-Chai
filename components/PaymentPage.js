@@ -12,7 +12,7 @@ const PaymentPage = ({ username }) => {
 
   useEffect(() => {
     getData()
-  }, [])
+  }, [getData])
 
   const handleChange = (e) => {
     setPaymentform({ ...paymentform, [e.target.name]: e.target.value })
