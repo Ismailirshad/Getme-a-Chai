@@ -84,7 +84,7 @@ const PaymentPage = ({ username }) => {
                 {payments.map((p, i) => {
                   return <li key={i} className='my-2 md:text-lg text-x'>
                     <FontAwesomeIcon icon={faCircleUser} style={{ color: "#B197FC", }} />
-                    <span>{p.name} donated <span className='font-bold'>{p.amount}</span> with a message "{p.message}"</span>
+                    <span>{p.name} donated <span className='font-bold'>{p.amount}</span> with a message {p.message}</span>
                   </li>
                 })}
               </ul>
