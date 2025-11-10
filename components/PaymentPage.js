@@ -4,11 +4,8 @@ import Script from 'next/script'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons'
 import { fetchuser, fetchpayments, initiate } from '@/app/actions/useractions'
-import { useSearchParams } from 'next/navigation'
-import { useRouter } from 'next/navigation'
 
 const PaymentPage = ({ username }) => {
-  // const { data: session } = useSession()
   const [paymentform, setPaymentform] = useState({ name: "", amount: "", message: "" })
   const [currentUser, setcurrentUser] = useState({})
   const [payments, setPayments] = useState([])
@@ -16,7 +13,6 @@ const PaymentPage = ({ username }) => {
   useEffect(() => {
     getData()
   }, [])
-
 
   const handleChange = (e) => {
     setPaymentform({ ...paymentform, [e.target.name]: e.target.value })
