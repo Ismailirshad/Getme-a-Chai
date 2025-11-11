@@ -4,7 +4,7 @@ import connectDB from '@/db/connectDb.js';
 import User from '@/models/User.js';
 
 export default async function Username({ params }) {
-  const { username } = await params; // ✅ FIX: params must be awaited
+  const { username } = params; // ✅ remove await
 
   await connectDB();
   const user = await User.findOne({ username }).lean();
@@ -17,7 +17,7 @@ export default async function Username({ params }) {
 }
 
 export async function generateMetadata({ params }) {
-  const { username } = await params; // ✅ FIX here too
+  const { username } = params; // ✅ remove await
   return {
     title: `${username} · Get Me A Chai`,
   };
