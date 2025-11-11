@@ -31,8 +31,8 @@ const PaymentPage = ({ username }) => {
     //get the order Id
     let a = await initiate(amount, username, paymentform)
     let orderId = a.id
-     const Razorpay = window.Razorpay;
-  if (!Razorpay) return alert("Razorpay not loaded yet");
+    const Razorpay = window.Razorpay;
+    if (!Razorpay) return alert("Razorpay not loaded yet");
     const options = {
       key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID, // Replace with your Razorpay key_id
       amount: amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
@@ -75,8 +75,7 @@ const PaymentPage = ({ username }) => {
             Lets help <span className='font-bold text-yellow-500'>{username} </span> to get a chaii
           </div>
           <div className='text-slate-400'>
-            {payments.length} payments <span className='font-bold text-green-500'>{payments.reduce((a, b) => a + (b.amount || 0), 0)}
-</span>  raised
+            {payments.length} payments <span className='font-bold text-green-500'>{payments.reduce((a, b) => a + (b.amount || 0), 0)}</span>  raised
           </div>
 
           <div className="payment flex flex-col md:flex-row gap-3 w-[80%] mt-11">

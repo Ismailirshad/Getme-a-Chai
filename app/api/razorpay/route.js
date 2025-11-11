@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { validatePaymentVerification } from "razorpay/dist/utils/razorpay-utils";
 import Payment from "@/models/Payment.js";
 import connectDB from "@/db/connectDb.js";
-import User from "@/models/User";
 
 export const POST = async (req) => {
   await connectDB();
@@ -16,7 +15,6 @@ export const POST = async (req) => {
     return NextResponse.json({ success: false, message: "Order ID not found" });
   }
 
-  // ✅ Use global secret from env
   const secret = process.env.RAZORPAY_KEY_SECRET;
 
   // Verify Razorpay signature

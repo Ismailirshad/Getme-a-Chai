@@ -1,6 +1,5 @@
 import Dashboard from '@/components/Dashboard.js'
 import React from 'react'
-// import type { Metadata } from 'next'
 
 const page=()=> {
   return (

@@ -4,7 +4,6 @@ import mongoose from "mongoose"
 import Payment from "@/models/Payment.js"
 import connectDB from "@/db/connectDb.js"
 import User from "@/models/User.js"
-// import User from "@/models/User"
 
 export const initiate = async (amount, to_username, paymentform) => {
     await connectDB()
@@ -21,7 +20,6 @@ export const initiate = async (amount, to_username, paymentform) => {
     let x = await instance.orders.create(options)
 
     //create a payment object which shows a pending payment in database
-
     await Payment.create({ oid: x.id, amount: amount, to_user: to_username, name: paymentform.name, message: paymentform.message })
     return x
 }
