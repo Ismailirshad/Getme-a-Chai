@@ -61,8 +61,8 @@
 // export { authoptions as GET, authoptions as POST }
 import NextAuth from 'next-auth'
 import GithubProvider from 'next-auth/providers/github'
-import User from '@/models/User'
-import connectDB from '@/db/connectDb'
+import User from '@/models/User.js'
+import connectDB from '@/db/connectDb.js'
 
 export const authOptions = {
   providers: [
