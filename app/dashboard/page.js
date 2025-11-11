@@ -1,4 +1,4 @@
-import Dashboard from '@/components/Dashboard'
+import Dashboard from '@/components/Dashboard.js'
 import React from 'react'
 // import type { Metadata } from 'next'
 

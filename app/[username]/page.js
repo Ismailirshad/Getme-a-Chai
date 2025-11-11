@@ -1,7 +1,7 @@
-import PaymentPage from '@/components/PaymentPage';
+import PaymentPage from '@/components/PaymentPage.js';
 import { notFound } from 'next/navigation';
-import connectDB from '@/db/connectDb';
-import User from '@/models/User';
+import connectDB from '@/db/connectDb.js';
+import User from '@/models/User.js';
 
 export default async function Username({ params }) {
   const { username } = await params; // ✅ FIX: params must be awaited
