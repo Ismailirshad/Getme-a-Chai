@@ -53,7 +53,7 @@ export default function Home() {
         <div className=" flex flex-col py-8 md:h-[450px] h-[300px] mx-auto justify-center items-center">
           <h1 className="text-2xl font-bold text-center pb-10" >Support us</h1>
 
-          <img src='Donateimg.png' alt='Donateimg' className="h-3/4 w-2/4 rounded-xl" />
+          <img src='DonateImage.png' alt='Donateimg' className="h-3/4 w-2/4 rounded-xl" />
         </div>
       </div>
 
