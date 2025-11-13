@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+☕ GetMe-a-Chai
 
-## Getting Started
+A Next.js + Razorpay-powered web app, where creators can receive chai (support) from their fans securely and beautifully.
 
-First, run the development server:
+🚀 Features
 
-```bash
+🔐 GitHub Authentication (NextAuth)
+
+💳 Razorpay Payment Gateway Integration
+
+🧑‍💻 Dynamic Creator Pages (/username)
+
+🗄️ MongoDB Atlas Database
+
+📈 Dashboard to Track Supporters & Payments
+
+🌐 Fully Deployed on Vercel
+
+🧩 Tech Stack
+
+Frontend: Next.js 14, React, Tailwind CSS
+Backend: Node.js, Next.js API Routes
+Database: MongoDB Atlas
+Payments: Razorpay API
+Auth: NextAuth (GitHub Provider)
+
+⚙️ Setup
+git clone https://github.com/yourusername/GetMe-a-Chai.git
+cd GetMe-a-Chai
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Create a .env.local file and add:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+NEXTAUTH_URL=https://getme-a-chai-akjk.vercel.app
+NEXTAUTH_SECRET=your_secret
+GITHUB_ID=your_github_client_id
+GITHUB_SECRET=your_github_client_secret
+MONGODB_URI=your_mongodb_uri
+NEXT_PUBLIC_RAZORPAY_KEY_ID=your_key_id
+RAZORPAY_KEY_SECRET=your_key_secret
+NEXT_PUBLIC_URL=https://getme-a-chai-akjk.vercel.app
 
-## Learn More
+🌐 Live Demo
 
-To learn more about Next.js, take a look at the following resources:
+👉 getme-a-chai-akjk.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👨‍💻 Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ismail Irshad
+🔗 LinkedIn
+ • 💻 GitHub
